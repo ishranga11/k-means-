@@ -1,0 +1,24 @@
+K-means Clustering Assignment
+
+Operating:
+
+* Update all the information of points in intern.txt in the same folder as of intern.cpp
+* Info in intern.txt must be in n lines for n points and each point having d values.
+* Compile the intern.cpp code. ( g++ intern.cpp )
+* Run it as ( ./a K ) where K is the number of clusters.
+* For ex --> For K =2 command will be -->   ./a 2
+
+Output:
+*Clusterwithpoints.txt --> Displays all points in respective clusters 
+*clusters.txt --> Displays the centroids of the clusters only.
+
+
+Working:
+
+* Normal K-means clustering algorithm is applied.
+* K random points are chosen for centroid points.
+* For all points the closest cluster centroid point is found and allotted to that cluster.
+* After the completion of assignment of all point to clusters, the mean of all points in cluster is calculated and set as new centroid point.
+* The whole above procedure is done till the point when mean of all points remain the same.
+* Whole procedure from top is done again for 100 times for 100 different initial pairs of points to avoid any error due to the wrong initial pair chosen. Cost function for each one of 100 times is calculated and the answer with min cost function is stored and finally printed.
+	
